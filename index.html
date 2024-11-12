@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignGlobe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>SignGlobe</h1>
+    </header>
+    <main class="main-content">
+        <section class="instructions">
+            <h2>How to Use the App</h2>
+            <ol>
+                <li>Click the "Select Regions" button to reveal the dropdown menu.</li>
+                <li>Select the desired regions from the dropdown.</li>
+                <li>Click the "Start Capturing" button to begin.</li>
+            </ol>
+        </section>
+        
+        <section class="region-selection">
+            <button id="toggle-dropdown">Select Regions</button>
+            <select id="region-select" multiple class="hidden">
+                <option value="region1">Region 1</option>
+                <option value="region2">Region 2</option>
+                <option value="region3">Region 3</option>
+                <option value="region4">Region 4</option>
+            </select>
+        </section>
+        <section class="capture-section">
+            <button id="start-capturing">Start Capturing</button>
+        </section>
+        <section class="capture-video hidden" id="video-section">
+            <h2>Capturing Video</h2>
+            <video id="capture-video" controls autoplay>
+                <source src="video-sample.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2024 SignGlobe. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
